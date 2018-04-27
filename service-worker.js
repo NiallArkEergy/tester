@@ -5,8 +5,8 @@ self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheName).then(cache => {
       return cache.addAll([
-        `/NiallArkEnergy/tester/`,
-        `/NiallArkEnergy/tester/index.html`
+        `/tester/`,
+        `/tester/index.html`
       ])
           .then(() => self.skipWaiting());
     })
